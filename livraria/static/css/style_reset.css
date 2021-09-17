@@ -1,0 +1,30 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Roboto', sans-serif;
+
+
+}
+
+.center{
+    max-width: 1000px;
+    margin: 0 auto;
+    padding: 0 2%;
+}
+
+.clear{
+    clear: both;
+}
+
+/*Classes Auxiliares*/
+.w50{
+    float: left;
+    width: 50%;
+    padding: 0 15px;
+}
+
+.text_right{
+    text-align: right;
+}
+

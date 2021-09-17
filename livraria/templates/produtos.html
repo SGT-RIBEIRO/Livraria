@@ -1,0 +1,38 @@
+{% load static %}
+
+<section class="produtos">
+       <div class="container_produtos center">
+           {% for i in object_list %}
+            <div class="produto_wraper">
+                <div class="box_single_produto">
+                    <img src="media/{{ i.imagem }}" alt="">
+                    <h2><b>Livro:</b> {{ i.livro }}</h2><br>
+                    <p><b>Genero:</b> {{ i.Fk_Genero.genero }}</p>
+                    <p><b>Autor(es):</b>
+                        {% for a in i.Fk_Autor.all %}
+                            {{ a.nome_autor }}
+                        {% endfor %}</p>
+                    <p><b>Descrição:</b> {{ i.Fk_Genero.descricao }}</p>
+                </div><!--box_single_produto-->
+                <a class="botao" href="{% url 'paginaEmConstrucao' %}">Comprar</a>
+            </div><!--produto_wraper-->
+           {% endfor %}
+       <div class="pagination" style="position: relative; margin-right: auto; margin-left: auto; padding: 15px">
+        <span class="step-links">
+            {% if page_obj.has_previous %}
+                <a href="?page={{ page_obj.previous_page_number }}"><i class="fas fa-arrow-left"></i></a>
+            {% endif %}
+
+            {% if page_obj.paginator.num_pages %}
+            <span class="current">
+                {{ page_obj.number }} de {{ page_obj.paginator.num_pages }}
+            </span>
+            {% endif %}
+
+            {% if page_obj.has_next %}
+                <a href="?page={{ page_obj.next_page_number }}"><i class="fas fa-arrow-right"></i></a>
+            {% endif %}
+        </span>
+    </div>
+       </div><!--container_produtos-->
+   </section><!--produtos-->

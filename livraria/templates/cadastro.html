@@ -1,0 +1,24 @@
+{% load static %}
+
+ <section class="cadastro">
+    <div class="center">
+        <div class="container_form ">
+            <h2>Pesquisar Livros</h2>
+            <i class="iconPesq fas fa-search"></i>
+
+            <form action="" method="GET" id="search-form" class="validate" novalidate>
+                <input class="inp" type="text" name="search" placeholder="Pesquisar Livros"><br>
+                <select class="inp" name="options" id="">
+                    <option value="Título" name="Titulo">Título</option>
+                    <option value="Autor" name="Autor">Autor</option>
+                    <option value="Gênero" name="Genero">Gênero</option>
+                </select><br>
+                <!-- real people should not fill this in and expect good things - do not remove this or risk form bot signups-->
+
+                <input class="inp" type="submit" value="Pesquisar" id="search-btn">
+            </form><!-- ---- Form ---- -->
+
+        </div><!-- ---- container Form ---- -->
+
+    </div><!-- ---- center ---- -->
+</section><!-- ---- section cadastro ---- -->

@@ -1,0 +1,354 @@
+.top_header2{
+
+    overflow: hidden;
+    position: relative;
+    width: 100%;
+    height: auto;
+    margin: auto;
+    padding: 100px 0 200px 0;
+    background-image: url("../imagens/livros.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    text-align: center;
+    height: 350px;
+
+}
+
+.overlay{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background: rgba(54, 53, 53, 0.61);
+    left: 0;
+    top: 0;
+    z-index: 1;
+
+
+}
+
+#texTop{
+    font-size: 52px;
+}
+
+#container_header_tpo{
+    margin-top: 120px;
+    
+}
+
+#top_header2_h2{
+    color: white;
+    font-size: 25px;
+}
+
+#top_header2_h3{
+    color: white;
+}
+
+/*Section Header2*/
+section.header2{
+    background-color: rgba(41, 40, 38, 0.356);
+    padding: 10px 0;
+}
+
+section.header2 > .container_header2{
+    text-align: center;
+    
+}
+
+
+.container_header2 .icone{
+    font-size: 35px;
+    color: rgba(7, 7, 7, 0.5);
+    margin-bottom: 5px;
+}
+
+.container_header2 h2,
+.container_header2 h3{
+    color: rgba(36, 41, 39, 0.5);
+    font-weight: normal;
+}    
+
+.container_header2 h2{
+    font-size: 20px;
+    
+  
+}
+
+section.header2 .container_header2 h2 b{
+    color: aquamarine;
+    font-weight: normal;
+}
+
+.container_header2 h3{
+    font-size: 18px;
+    
+}
+/*-----------------------------------*/
+/* section cadastro */
+
+section.cadastro{
+    background-color: cadetblue;
+    overflow: hidden;
+    height: 235px;
+}
+
+section.cadastro .center{
+    display: flex;
+    position: relative;
+}
+
+section.cadastro .container_form{ 
+    margin: 15px; 
+    min-width: 220px;
+    max-width: 600px;
+    position: absolute;
+    padding: 20px;
+    width: 60%;
+    background-color:#ffffff00;
+    margin-bottom: 10px;
+    left: 50%;
+    transform: translateX(-50%);
+    
+}
+
+section.cadastro h2{
+    font-size: 18px;
+    color: aquamarine;
+    margin-bottom: 20px;
+    float: left;
+}
+
+.iconPesq{
+    float: left;
+    margin-left: 5px;
+    margin-top: 0px;
+    color: #7c7474;
+    font-size: 25px;
+    /*box-shadow: 0px 0px 5px 5px rgba(255, 255, 255, 0.164);*/
+}
+
+
+section.cadastro p{
+    font-size: 15px;
+    margin-bottom: 10px;
+}
+
+
+.inp{
+    width: 100%;
+    box-sizing: border-box;
+    margin: auto; 
+    padding: 5px;
+    margin: 5px 0;
+    border: none;
+}
+
+select.inp{
+    -moz-appearance: none;
+    -webkit-appearance: none;
+    appearance: none;
+    background-image: url('../images/arrow.jpg');
+    background-repeat: no-repeat;
+    background-position: calc(100% - 10px) center;
+}
+
+input[type=submit]{
+    background-color: #48C5CE;
+    color: white;
+    font-weight: bold;
+    cursor: pointer;
+    box-shadow: 2px 2px 2px rgb(26, 37, 37);
+}
+
+input[type=submit]:hover{
+    text-shadow: 2px 2px 2px rgb(26, 37, 37);
+}
+
+/*-----------------------------------*/
+/*Section Produtos*/
+
+section.produtos{
+    margin: 25px 0;
+}
+
+section.produtos .container_produtos{
+    display: flex;
+    flex-wrap: wrap;
+
+}
+
+.container_produtos .produto_wraper{ 
+    width: 33.3%;
+    padding: 20px;
+    margin: 20px 0;
+    
+    
+}
+
+.box_single_produto{
+    border: 1px solid chartreuse;
+    height: 100%;
+}
+
+.container_produtos .produto_wraper img{
+    max-width: 100%;
+}
+
+.container_produtos .produto_wraper h2{
+    text-align: center;
+    font-weight: normal;
+    padding: 0 8px;
+    
+}
+
+.container_produtos .produto_wraper p{
+    padding: 10px 5px;
+    font-weight: normal;
+}
+
+.container_produtos .produto_wraper a.botao{
+    display: block;
+    width: 100%;
+    text-align: center;
+    text-decoration: none;
+    padding: 10px 8px;
+    background-color: rgba(32, 32, 30, 0.8);
+    color: white;
+    font-size: 20px;
+}
+
+
+a.botao:hover{
+    text-shadow: 5px -0px 8px  rgb(29, 182, 182);
+}
+/*-----------------------------------*/
+/*Section TEXTO*/
+
+section.texto{
+    margin: 40px 0;
+    background-color: rgba(41, 40, 38, 0.356);
+    padding: 10px 0;
+}
+
+section.texto .container_texto{
+    text-align: center;
+}
+
+.container_texto .icone{
+    font-size: 35px;
+    color: rgba(36, 41, 39, 0.253);
+    margin-bottom: 5px;
+}
+
+.container_texto h2,
+.container_texto h3{
+    color: rgba(36, 41, 39, 0.5);
+    font-weight: normal;
+}    
+
+.container_texto h2{
+    font-size: 20px;
+    
+  
+}
+
+section.texto .container_texto h2 b{
+    color: aquamarine;
+    font-weight: normal;
+}
+
+.container_texto h3{
+    font-size: 18px;
+    
+}
+
+/*-----------------------------------*/
+/*Section noticias & depoimentos*/
+
+section.novidades{
+    padding: 10px 0;
+}
+
+.w50 h2{
+    margin-bottom: 15px;
+    font-size: 23px;
+    font-weight: normal;
+    color:rgba(36, 41, 39, 0.5);
+}
+
+.box_single_noticia{
+    padding: 15px 0;
+    border-bottom: 1px dotted #ccc;
+}
+
+.box_single_noticia h3{
+    margin: 15px 0;
+    font-size: 18px;
+    color: rgba(36, 41, 39, 0.5);
+}
+
+.box_single_noticia p{
+    font-size: 15px;
+    color: rgba(36, 41, 39, 0.5);
+}
+
+.depoimentos ul{
+    list-style-position: inside;
+}
+
+.depoimentos li{
+    margin-bottom: 10px;
+    font-size: 15px;
+    color:rgba(36, 41, 39, 0.5);
+}
+
+/*-----------------------------------*/
+#ultimaSection{
+    margin-bottom: 0;
+}
+/*Footer*/
+
+footer.rodape{
+    
+    padding: 20px 0;
+    background-color: rgba(10, 10, 10, 0.322);
+    color: aquamarine;
+    font-size: 15px;
+}
+
+
+@media screen and (max-width:700px){
+
+    .container_produtos .produto_wraper{ 
+        width: 100%;
+        padding: 20px;
+        max-width: 450px;
+        margin: 20px auto;
+        
+    }
+
+    .w50{
+        width: 100%;
+        margin-bottom: 20px;
+    }
+
+}
+
+/* -- ---- Responsivo 590px ---- -- */
+
+@media screen and (max-width:590px){
+
+
+    section.cadastro .container_form{
+        left: 50%;
+        transform: translateX(-50%);
+        margin: 15px 0;
+    }
+
+    #texTop{
+
+        font-size: 40px;
+    }
+}
+
